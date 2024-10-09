@@ -1,0 +1,39 @@
+.container{
+  max-width: 1320px;
+  padding: 0 12px;
+}
+
+//utils
+.mb-10{
+  margin-bottom: 3rem;
+}
+
+//swiper1
+.nav-btn{
+  border: 0;
+  background-color: #eeeeee;
+  opacity: 0.6;
+  width: 100px;
+  height: 100px;
+  transition: 0.6s;
+  position: absolute;
+  z-index: 10;
+  top: var(--swiper-navigation-top-offset, 40%);
+}
+.nav-btn-hover:hover{
+  opacity: 1;
+}
+.swiper1-button-prev{
+  left: var(--swiper-navigation-sides-offset, -30px);
+  right: auto;
+  &:hover{
+    transform: translateX(-15px);
+  }
+}
+.swiper1-button-next{
+  right: var(--swiper-navigation-sides-offset, -30px);
+  left: auto;
+  &:hover{
+    transform: translateX(15px);
+  }
+}
