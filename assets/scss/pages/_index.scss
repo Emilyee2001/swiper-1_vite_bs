@@ -4,14 +4,15 @@
 }
 
 //utils
-.mb-10{
-  margin-bottom: 3rem;
+.mb-20{
+  margin-bottom: 6rem;
 }
 
 //swiper1
 .nav-btn{
   border: 0;
-  background-color: #eeeeee;
+  color: #ffffff;
+  background-color: orange;
   opacity: 0.6;
   width: 100px;
   height: 100px;
@@ -36,4 +37,44 @@
   &:hover{
     transform: translateX(15px);
   }
+}
+
+//swiper2
+.mySwiper2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav-btn2{
+  border: 0;
+  background-color: #ffffff;
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
+  position: absolute;
+  z-index: 10;
+  top: var(--swiper-navigation-top-offset, 40%);
+}
+.nav-btn2-hover:hover{
+  background-color: orange;
+  color: #ffffff;
+}
+.swiper2-button-prev{
+  left: var(--swiper-navigation-sides-offset, 150px);
+  right: auto;
+  &:hover{
+    transform: translateX(-10px);
+  }
+}
+.swiper2-button-next{
+  right: var(--swiper-navigation-sides-offset, 150px);
+  left: auto;
+  &:hover{
+    transform: translateX(10px);
+  }
+}
+
+:root .swiper2-pagination{
+  --swiper-theme-color: orange;
 }
